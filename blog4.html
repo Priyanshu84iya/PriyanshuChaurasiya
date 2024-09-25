@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Priyanshu | Personal Portfolio</title>
+
+    <!-- Font-Awesome CSS -->
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper.css" />
+
+    <!-- Magnific-Popup CSS -->
+    <link rel="stylesheet" href="assets/vendors/magnific-popup/magnific-popup.css" />
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet"  href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-css.min.js"></script>
+
+
+</head>
+<body>
+
+
+    <!-------------------- Scroll-Top Area (Start) -------------------->
+    <a href="#home" class="scroll-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <!-------------------- Scroll-Top Area (End) -------------------->
+
+        
+
+    <!-------------------- Header Area (Start) -------------------->
+    <header class="header">
+
+        <!-- Logo -->
+        <a class="logo" href="#home">
+            <h2> Priyanshu</h2> 
+            <!-- <img src="assets/images/logo.png" alt="logo" /> -->
+        </a>
+        <!-- Logo End -->
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#service">service</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#testimonial">testimonials</a>
+            <a href="#blog">blogs</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <!-- Menubar -->
+        <div class="fas fa-bars" id="menu-btn"></div>
+        
+    </header>
+    <!-------------------- Header Area (End) -------------------->
+ 
+
+
+
+
+    <section class="yoyo" id="yoyoblog" style="margin: 0 auto; max-width: 100%; padding: 40px; background-color: black; color: white;"></section>
+        <div class="heading">
+            <h2 style="font-size: 3rem; text-align: center; margin-bottom: 30px; color: white;"><span>Blog</span> 😉✨🤤</h2>
+        </div>
+    
+        <div class="box-container" style="display: flex; flex-direction: column; gap: 40px;">
+            <div class="content" style="padding: 30px; background-color: #1a1a1a; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); color: white;">
+                <h1 style="font-size: 2.5rem; color: #fff;">Top 10 CSS Tricks Every Web Developer Should Know</h1>
+                <p style="font-size: 1.5rem; color: #fff;">CSS is the cornerstone of web design, giving structure and style to web pages. Mastering some of the more advanced CSS tricks can save time and enhance your designs. Let’s look at the top 10 CSS tricks every web developer should know.</p>
+            
+                <h2 style="font-size: 2.5rem; color: #fff;">1. CSS Variables (Custom Properties)</h2>
+                <p style="font-size: 1.5rem; color: #fff;">CSS variables are reusable values, perfect for consistency and easy updates. You can define variables globally and use them throughout your stylesheet.</p>
+            
+                <div style="position: relative; background-color: #1e1e1e; color: #d4d4d4; border-radius: 8px; padding: 50px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; font-size: 16px; line-height: 1.5;">
+                    <button style="position: absolute; top: 10px; right: 10px; background-color: #007acc; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px; font-size: 14px;" 
+                            onclick="copyCode('codeBlock1')">Copy</button>
+                    <pre id="codeBlock1" style="margin: 0; white-space: pre-wrap; word-wrap: break-word;">
+                        <code class="language-css">
+                            :root {
+                                --primary-color: #3498db;
+                                --font-stack: 'Helvetica Neue', sans-serif;
+                            }
+            
+                            body {
+                                background-color: var(--primary-color);
+                                font-family: var(--font-stack);
+                            }
+                        </code>
+                    </pre>
+                </div>
+            
+                <h2 style="font-size: 2.5rem; color: #fff;">2. Flexbox: Easy Centering</h2>
+                <p style="font-size: 1.5rem; color: #fff;">Flexbox makes it easy to center content. By using <code>justify-content</code> and <code>align-items</code>, you can center elements both horizontally and vertically.</p>
+            
+                <div style="position: relative; background-color: #1e1e1e; color: #d4d4d4; border-radius: 8px; padding: 50px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; font-size: 16px; line-height: 1.5;">
+                    <button style="position: absolute; top: 10px; right: 10px; background-color: #007acc; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px; font-size: 14px;" 
+                            onclick="copyCode('codeBlock2')">Copy</button>
+                    <pre id="codeBlock2" style="margin: 0; white-space: pre-wrap; word-wrap: break-word;">
+                        <code class="language-css">
+                            .container {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 100vh;
+                            }
+                        </code>
+                    </pre>
+                </div>
+            
+                <h2 style="font-size: 2.5rem; color: #fff;">3. Grid Layout for Complex Designs</h2>
+                <p style="font-size: 1.5rem; color: #fff;">CSS Grid allows you to create complex layouts with minimal code. This is perfect for creating responsive designs without relying on third-party libraries.</p>
+            
+                <div style="position: relative; background-color: #1e1e1e; color: #d4d4d4; border-radius: 8px; padding: 50px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; font-size: 16px; line-height: 1.5;">
+                    <button style="position: absolute; top: 10px; right: 10px; background-color: #007acc; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px; font-size: 14px;" 
+                            onclick="copyCode('codeBlock3')">Copy</button>
+                    <pre id="codeBlock3" style="margin: 0; white-space: pre-wrap; word-wrap: break-word;">
+                        <code class="language-css">
+                            .grid-container {
+                                display: grid;
+                                grid-template-columns: repeat(3, 1fr);
+                                gap: 20px;
+                            }
+                        </code>
+                    </pre>
+                </div>
+            
+                <h2 style="font-size: 2.5rem; color: #fff;">4. Responsive Typography with <code>clamp()</code></h2>
+                <p style="font-size: 1.5rem; color: #fff;">The <code>clamp()</code> function lets you create responsive typography that scales between a minimum and maximum size, making your designs more flexible and readable on different screen sizes.</p>
+            
+                <div style="position: relative; background-color: #1e1e1e; color: #d4d4d4; border-radius: 8px; padding: 50px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; font-size: 16px; line-height: 1.5;">
+                    <button style="position: absolute; top: 10px; right: 10px; background-color: #007acc; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px; font-size: 14px;" 
+                            onclick="copyCode('codeBlock4')">Copy</button>
+                    <pre id="codeBlock4" style="margin: 0; white-space: pre-wrap; word-wrap: break-word;">
+                        <code class="language-css">
+                            h1 {
+                                font-size: clamp(1.5rem, 2vw, 3rem);
+                            }
+                        </code>
+                    </pre>
+                </div>
+            
+                <h2 style="font-size: 2.5rem; color: #fff;">5. CSS Transitions for Smooth Animations</h2>
+                <p style="font-size: 1.5rem; color: #fff;">CSS transitions create smooth animations for property changes like color, size, or position. This adds a layer of interactivity and polish to your designs.</p>
+            
+                <div style="position: relative; background-color: #1e1e1e; color: #d4d4d4; border-radius: 8px; padding: 50px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; font-size: 16px; line-height: 1.5;">
+                    <button style="position: absolute; top: 10px; right: 10px; background-color: #007acc; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px; font-size: 14px;" 
+                            onclick="copyCode('codeBlock5')">Copy</button>
+                    <pre id="codeBlock5" style="margin: 0; white-space: pre-wrap; word-wrap: break-word;">
+                        <code class="language-css">
+                            .button {
+                                background-color: #3498db;
+                                transition: background-color 0.3s ease;
+                            }
+            
+                            .button:hover {
+                                background-color: #2980b9;
+                            }
+                        </code>
+                    </pre>
+                </div>
+            
+                <h2 style="font-size: 2.5rem; color: #fff;">6. Aspect Ratio for Consistent Media</h2>
+                <p style="font-size: 1.5rem; color: #fff;">The <code>aspect-ratio</code> property maintains a consistent ratio for media like images or videos, ensuring a uniform appearance across devices.</p>
+            
+                <div style="position: relative; background-color: #1e1e1e; color: #d4d4d4; border-radius: 8px; padding: 50px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; font-size: 16px; line-height: 1.5;">
+                    <button style="position: absolute; top: 10px; right: 10px; background-color: #007acc; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px; font-size: 14px;" 
+                            onclick="copyCode('codeBlock6')">Copy</button>
+                    <pre id="codeBlock6" style="margin: 0; white-space: pre-wrap; word-wrap: break-word;">
+                        <code class="language-css">
+                            .media {
+                                aspect-ratio: 16 / 9;
+                            }
+                        </code>
+                    </pre>
+                </div>
+            
+                <h2 style="font-size: 2.5rem; color: #fff;">7. Z-Index and Stacking Contexts</h2>
+                <p style="font-size: 1.5rem; color: #fff;">The <code>z-index</code> property controls the stacking order of elements. Use this to manage overlapping elements effectively.</p>
+            
+                <div style="position: relative; background-color: #1e1e1e; color: #d4d4d4; border-radius: 8px; padding: 50px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; font-size: 16px; line-height: 1.5;">
+                    <button style="position: absolute; top: 10px; right: 10px; background-color: #007acc; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px; font-size: 14px;" 
+                            onclick="copyCode('codeBlock7')">Copy</button>
+                    <pre id="codeBlock7" style="margin: 0; white-space: pre-wrap; word-wrap: break-word;">
+                        <code class="language-css">
+                            .box1 {
+                                z-index: 10;
+                            }
+            
+                            .box2 {
+                                z-index: 5;
+                            }
+                        </code>
+                    </pre>
+                </div>
+            
+                <h2 style="font-size: 2.5rem; color: #fff;">8. CSS Scroll Snap</h2>
+                <p style="font-size: 1.5rem; color: #fff;">CSS Scroll Snap creates snap points for better user experience when scrolling through elements, like slides or sections.</p>
+            
+                <div style="position: relative; background-color: #1e1e1e; color: #d4d4d4; border-radius: 8px; padding: 50px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; font-size: 16px; line-height: 1.5;">
+                    <button style="position: absolute; top: 10px; right: 10px; background-color: #007acc; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px; font-size: 14px;" 
+                            onclick="copyCode('codeBlock8')">Copy</button>
+                    <pre id="codeBlock8" style="margin: 0; white-space: pre-wrap; word-wrap: break-word;">
+                        <code class="language-css">
+                            .carousel {
+                                scroll-snap-type: x mandatory;
+                            }
+            
+                            .slide {
+                                scroll-snap-align: center;
+                            }
+                        </code>
+                    </pre>
+                </div>
+            
+                <h2 style="font-size: 2.5rem; color: #fff;">9. Dark Mode Toggle with CSS</h2>
+                <p style="font-size: 1.5rem; color: #fff;">You can easily implement dark mode with CSS using media queries to detect system preferences.</p>
+            
+                <div style="position: relative; background-color: #1e1e1e; color: #d4d4d4; border-radius: 8px; padding: 50px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; font-size: 16px; line-height: 1.5;">
+                    <button style="position: absolute; top: 10px; right: 10px; background-color: #007acc; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px; font-size: 14px;" 
+                            onclick="copyCode('codeBlock9')">Copy</button>
+                    <pre id="codeBlock9" style="margin: 0; white-space: pre-wrap; word-wrap: break-word;">
+                        <code class="language-css">
+                            @media (prefers-color-scheme: dark) {
+                                body {
+                                    background-color: #121212;
+                                    color: #ffffff;
+                                }
+                            }
+                        </code>
+                    </pre>
+                </div>
+            
+                <h2 style="font-size: 2.5rem; color: #fff;">10. Media Queries for Responsive Design</h2>
+                <p style="font-size: 1.5rem; color: #fff;">Responsive design is essential for modern web development. Use media queries to adjust styles based on the user's device size.</p>
+            
+                <div style="position: relative; background-color: #1e1e1e; color: #d4d4d4; border-radius: 8px; padding: 50px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; font-size: 16px; line-height: 1.5;">
+                    <button style="position: absolute; top: 10px; right: 10px; background-color: #007acc; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px; font-size: 14px;" 
+                            onclick="copyCode('codeBlock10')">Copy</button>
+                    <pre id="codeBlock10" style="margin: 0; white-space: pre-wrap; word-wrap: break-word;">
+                        <code class="language-css">
+                            html {
+                                font-size: 100%; /* Default size */
+                            }
+            
+                            @media (max-width: 600px) {
+                                html {
+                                    font-size: 90%; /* Adjust size for small screens */
+                                }
+                            }
+                        </code>
+                    </pre>
+                </div>
+    </section>
+
+
+    <!-------------------- Blog Area (Start) -------------------->
+    <section class="blog" id="blog">
+
+        <div class="heading">
+            <h2>my <span>blog</span></h2>
+        </div>
+
+        <div class="swiper-container blog-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide blog-item">
+                    <div class="image">
+                        <img src="assets/images/Blogs/blog-11.png" alt="Blog-Image" />
+                    </div>
+                    <div class="content">
+                        <div class="intro">
+                            <h5><i class="fas fa-calendar-alt"></i><span>1st jan, 2022</span></h5>
+                            <h5><i class="fas fa-user"></i><span>by admin</span></h5>
+                        </div>
+                        <a class="main-heading" href="#">How to make your website responsive</a>
+                        <p>Use flexible layouts, media queries, and scalable images for responsiveness.
+                        </p>    
+                        <a href="blog.html" class="btn">read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide blog-item">
+                    <div class="image">
+                        <img src="assets/images/Blogs/blog-22.png" alt="Blog-Image" />
+                    </div>
+                    <div class="content">
+                        <div class="intro">
+                            <h5><i class="fas fa-calendar-alt"></i><span>1st jan, 2022</span></h5>
+                            <h5><i class="fas fa-user"></i><span>by admin</span></h5>
+                        </div>
+                        <a class="main-heading" href="#">Learn Web Development As A Beginner</a>
+                        <p>Start with HTML, CSS, JavaScript, practice projects, and online tutorials.
+                        </p>    
+                        <a href="blog1.html" class="btn">read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide blog-item">
+                    <div class="image">
+                        <img src="assets/images/Blogs/blog-33.png" alt="Blog-Image" />
+                    </div>
+                    <div class="content">
+                        <div class="intro">
+                            <h5><i class="fas fa-calendar-alt"></i><span>1st jan, 2022</span></h5>
+                            <h5><i class="fas fa-user"></i><span>by admin</span></h5>
+                        </div>
+                        <a class="main-heading" href="#">Complete Roadmap For Web Development</a>
+                        <p>Learn HTML, CSS, JavaScript, Git, frameworks, backend, and database integration.
+                        </p>    
+                        <a href="blog2.html" class="btn">read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide blog-item">
+                    <div class="image">
+                        <img src="assets/images/Blogs/blog-44.png" alt="Blog-Image" />
+                    </div>
+                    <div class="content">
+                        <div class="intro">
+                            <h5><i class="fas fa-calendar-alt"></i><span>1st jan, 2022</span></h5>
+                            <h5><i class="fas fa-user"></i><span>by admin</span></h5>
+                        </div>
+                        <a class="main-heading" href="#">Websites & Tools For Every Web Developer</a>
+                        <p>VS Code, GitHub, CodePen, Stack Overflow, Chrome DevTools, MDN, Figma.
+                        </p>    
+                        <a href="blog3.html" class="btn">read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="swiper-pagination swiper-pagination2"></div>
+
+        </div>
+
+    </section>
+   <!----------------------- Blog Area (End) -------------------->
+
+
+
+    <!-------------------- Contact Area (Start) -------------------->
+    <section class="contact" id="contact">
+
+        <div class="heading">
+            <h2><span>contact</span> me</h2>
+        </div>
+
+        <div class="box-container">
+
+            <div class="contact-info">
+
+                <h3>get in touch</h3>
+
+                <p>Sector 63A, Noida Uttar Pradesh 201301</p>
+    
+                <div class="info-item">
+                    <h4>Phone:</h4>
+                    <div class="detail">
+                        <div class="fas fa-phone"></div>
+                        <p>+917217767892</p>
+                    </div>
+                    <div class="detail">
+                        <div class="fas fa-phone"></div>
+                        <p>+918171374921</p>
+                    </div>
+                </div>
+    
+                <div class="info-item">
+                    <h4>email:</h4>
+                    <div class="detail">
+                        <div class="fas fa-envelope"></div>
+                        <p class="gmail">priyanshukawaii@gmail.com</p>
+                    </div>
+                    <div class="detail">
+                        <div class="fas fa-envelope"></div>
+                        <p class="gmail">otakupriyanshu@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <h4>linkedin:</h4>
+                    <div class="detail">
+                        <div class="fab fa-linkedin"></div>
+                        <p class="linkedin">https://www.linkedin.com/</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <h4>github:</h4>
+                    <div class="detail">
+                        <div class="fab fa-github"></div>
+                        <p class="github">https://github.com/Priyanshu84iya</p>
+                    </div>
+                </div>
+            </div>
+    
+            <form method="post" class="contact-form" id="contactUs-Form">
+                    
+                <input type="text" name="name" class="box" id="name" placeholder="name" required />
+                <input type="email" name="email" class="box" id="email" placeholder="email" required />
+                <input type="text" name="subject" class="box" id="subject" placeholder="subject" required />
+                <textarea cols="30" rows="10" name="comment" id="comment" class="box" placeholder="message"></textarea>
+                <button type="submit" class="btn" name="submit" id="submit">send message</button>
+                
+                <span class="alert" id="msg"></span>
+                
+            </form>
+            
+        </div>
+
+    </section>
+    <!-------------------- Contact Area (End) -------------------->
+
+
+
+    <!-------------------- Footer Area (Start) -------------------->
+
+    <script>
+        function copyCode(id) {
+            const codeBlock = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(codeBlock).then(() => {
+                alert('Code copied to clipboard!');
+            });
+        }
+    </script>
+
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/Priyanshu84iya" class="fab fa-github"></a>
+            <a href="https://x.com/Priyans20311071" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/hoosier_daaaddy" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin-in"></a>
+        </div>
+
+        <div class="content">
+            <p>created by <span>Priyanshu Chaurasiya</span> | all rights reserved</p>
+        </div>
+    </footer>
+    <!-------------------- Footer Area (End) -------------------->
+
+
+    <script>
+        function copyCode() {
+          const codeBlock = document.getElementById('codeBlock').innerText;
+          navigator.clipboard.writeText(codeBlock).then(() => {
+            alert("Code copied to clipboard!");
+          });
+        }
+      </script>
+
+
+
+    <!-- JQuery -->
+    <script src="assets/vendors/jquery/jquery-3.6.0.js"></script>
+
+    <!-- SWIPER JS -->
+    <script src="assets/vendors/swiper/swiper.js"></script>
+
+    <!-- Magnific-Popup JS -->
+    <script src="assets/vendors/magnific-popup/jquery.magnific-popup.js"></script>
+
+    <!-- Typed JS -->
+    <script src="assets/vendors/typed/typed.js"></script>
+
+    <!-- Custom Script File -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/scroll-spy.js"></script>
+    <script src="assets/js/counter-up.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+    <script src="assets/js/testi-slider.js"></script>
+    <script src="assets/js/blog-slider.js"></script>
+
+    <!---------------- Custom Script ---------------->
+
+    <!-- Typed Script -->
+    <script>
+        var typed = new Typed('.typing-text', {
+
+            strings: ['Web developer', 'web designer', 'photographer', 'graphic designer'],
+            typeSpeed: 120,
+            loop: true
+        });
+    </script>
+
+    <!-- Contact-Form Script -->
+    <script>
+        jQuery('#contactUs-Form').on('submit',function(e){
+          jQuery('#msg').html('');
+          jQuery('#submit').html('Please wait');
+          jQuery('#submit').attr('disabled',true);
+          jQuery.ajax({
+              url:'assets/php/submit.php',
+              type:'post',
+              data:jQuery('#contactUs-Form').serialize(),
+              success:function(result){
+                  jQuery('#msg').html(result);
+                  jQuery('#submit').html('Submit');
+                  jQuery('#submit').attr('disabled',false);
+                  jQuery('#contactUs-Form')[0].reset();
+              }
+          });
+          e.preventDefault();
+        });
+    </script>
+
+</body>
+</html>
